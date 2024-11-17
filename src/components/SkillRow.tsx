@@ -1,13 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getModifierValue } from '../utils';
-import { selectCurrentCharacterValue } from '../store/selectors';
+import {
+  getToTalPoints,
+  selectCurrentCharacterValue,
+} from '../store/selectors';
 import { allocateSkillPoints } from '../store/characterSlice';
 
 const SkillRow = ({
   name,
   pointsSpend,
-  totalPoints = 10,
+  totalPoints,
   attributeModifier,
   totalValue,
   attributes,
@@ -67,6 +70,7 @@ const SkillRow = ({
 const mapStateToProps = (state) => {
   return {
     attributes: selectCurrentCharacterValue(state),
+    totalPoints: getToTalPoints(state),
   };
 };
 const mapDispatchToProps = (dispatch) => {
