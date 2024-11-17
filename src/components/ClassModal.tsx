@@ -42,3 +42,8 @@ const ClassModal = forwardRef(
   }
 );
 export default ClassModal;
+
+//// Note for Review
+
+//here we can also do state and just props passing but i have used forwareded props so we can have add more function to useimprahancive hook and
+//just import in a parent class

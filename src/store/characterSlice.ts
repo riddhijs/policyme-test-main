@@ -100,3 +100,9 @@ export const {
   attributeValueDecrement,
   allocateSkillPoints,
 } = characterSlice.actions;
+
+// Note for Review
+
+// My intention here is to add thunks for saving and fetching data.
+// Additionally, the idea is to store an array of characters with all related information in one place.
+// This setup can serve as a starting point for features like adding a new character, though I haven't focused on implementing that yet due to time constraints.

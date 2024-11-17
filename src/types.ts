@@ -33,3 +33,7 @@ export type CharactersState = {
   characters: Record<string, Character>;
   currentCharacter: string | null;
 };
+
+//note for reviewer
+//here i should use keyof attribute but just i was getting error somewhere typemismatch
+//so i just removed that :D
