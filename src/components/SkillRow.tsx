@@ -49,7 +49,7 @@ const SkillRow = ({
           disabled={pointsSpend <= 0}
           style={{ width: 20 }}
           onClick={() =>
-            allocateSkillPoints({
+            modifyPoints({
               skillName: name,
               points: pointsSpend - 1,
               type: 'decrement',
